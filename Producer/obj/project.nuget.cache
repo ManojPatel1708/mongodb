@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "LKgOjWsmMgY=",
+  "success": true,
+  "projectFilePath": "C:\\FLIPNEO\\learning-manoj\\mongodb\\Producer\\Producer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PATELM03\\.nuget\\packages\\confluent.kafka\\2.14.0\\confluent.kafka.2.14.0.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\librdkafka.redist\\2.14.0\\librdkafka.redist.2.14.0.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\mongodb.bson\\3.8.0\\mongodb.bson.3.8.0.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\mongodb.driver\\3.8.0\\mongodb.driver.3.8.0.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\PATELM03\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Snappier' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-pggp-6c3x-2xmx",
+      "projectPath": "C:\\FLIPNEO\\learning-manoj\\mongodb\\Producer\\Producer.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\FLIPNEO\\learning-manoj\\mongodb\\Producer\\Producer.csproj",
+      "libraryId": "Snappier",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

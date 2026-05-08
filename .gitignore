@@ -1,0 +1,4 @@
+mongo-data/
+*.log
+*.lock
+node_modules/
