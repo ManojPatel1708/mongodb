@@ -2,3 +2,40 @@ mongo-data/
 *.log
 *.lock
 node_modules/
+
+# Build folders
+bin/
+obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Cache files
+*.cache
+
+# Docker override
+docker-compose.override.yml
+
+# Environment files
+.env
+
+# Kafka / temp data

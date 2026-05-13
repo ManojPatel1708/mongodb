@@ -8,7 +8,7 @@ var config = new ProducerConfig
 
 using var producer = new ProducerBuilder<string, string>(config).Build();
 
-Console.WriteLine("🚀 Sending order events...");
+Console.WriteLine("Sending order events...");
 
 var random = new Random();
 
@@ -16,7 +16,7 @@ while (true)
 {
     var order = new Order
     {
-        OrderId = "ORD-" + random.Next(100, 999),
+        OrderId = "ORD-M" + random.Next(2000, 9999),
         Customer = "Customer-" + random.Next(1, 10),
         Amount = random.Next(500, 15000),
         Status = "CREATED",
@@ -38,7 +38,9 @@ while (true)
             Value = json
         });
 
-    Console.WriteLine($"✅ Sent: {json}");
+    Console.WriteLine($"Sent: {json}");
 
-    await Task.Delay(2000);
+    break; // Send only one message for demo purposes. Remove this line to continuously send messages.
+
+    await Task.Delay(10000);
 }

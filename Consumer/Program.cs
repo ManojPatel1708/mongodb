@@ -16,7 +16,7 @@ var collection = database.GetCollection<Order>("orders");
 using var consumer = new ConsumerBuilder<string, string>(kafkaConfig).Build();
 consumer.Subscribe("orders");
 
-Console.WriteLine("🚀 Listening for order events...");
+Console.WriteLine("Listening for order events...");
 
 while (true)
 {
@@ -32,16 +32,21 @@ while (true)
         // UPSERT (VERY IMPORTANT)
         var filter = Builders<Order>.Filter.Eq(o => o.OrderId, order.OrderId);
 
-        await collection.ReplaceOneAsync(
-            filter,
-            order,
-            new ReplaceOptions { IsUpsert = true }
+        //To Avoid Duplicate Orders
+        // await collection.ReplaceOneAsync(
+        //     filter,
+        //     order,
+        //     new ReplaceOptions { IsUpsert = true }
+        // );
+
+        await collection.InsertOneAsync(
+            order
         );
 
-        Console.WriteLine($"✅ Stored OrderId={order.OrderId}");
+        Console.WriteLine($"Stored OrderId={order.OrderId}");
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"❌ Error: {ex.Message}");
+        Console.WriteLine($"Error: {ex.Message}");
     }
 }
