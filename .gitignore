@@ -1,11 +1,6 @@
-mongo-data/
-*.log
-*.lock
-node_modules/
-
-# Build folders
-bin/
-obj/
+# Build folders (for all projects)
+**/bin/
+**/obj/
 
 # Visual Studio / VS Code
 .vs/
@@ -26,16 +21,9 @@ Thumbs.db
 
 # NuGet
 *.nupkg
-*.snupkg
 packages/
 
 # Cache files
 *.cache
 
-# Docker override
-docker-compose.override.yml
-
-# Environment files
-.env
-
-# Kafka / temp data
+# Debug / temp outputs
