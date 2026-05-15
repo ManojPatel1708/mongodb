@@ -25,6 +25,7 @@ packages/
 
 # Cache files
 *.cache
+*.lsCache
 
 # Debug / temp outputs
 
